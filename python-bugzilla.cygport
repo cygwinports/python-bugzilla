@@ -1,0 +1,21 @@
+inherit python-wheel
+
+NAME="python-bugzilla"
+VERSION=2.0.0
+RELEASE=1
+CATEGORY="Python Net"
+SUMMARY="Bugzilla XML-RPC Python module"
+DESCRIPTION="This package provides a Python module for talking to a Bugzilla
+instance over XML-RPC, and a command line tool.  This was written specifically
+for Red Hat Bugzilla, but it still should be generically useful."
+HOMEPAGE="https://github.com/python-bugzilla/python-bugzilla"
+SRC_URI="${HOMEPAGE}/archive/v${VERSION}/python-bugzilla-v${VERSION}.tar.gz"
+SRC_DIR="python-bugzilla-${VERSION}"
+
+ARCH=noarch
+
+python3_bugzilla_CONTENTS="
+	usr/bin/bugzilla
+	${python3_bugzilla_CONTENTS}
+	usr/share/man/man1/bugzilla.1*
+"
