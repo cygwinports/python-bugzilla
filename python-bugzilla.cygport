@@ -14,11 +14,11 @@ SRC_DIR="python-bugzilla-${VERSION}"
 
 ARCH=noarch
 
-PKG_NAMES+=" bugzilla"
-bugzilla_CATEGORY="Net"
-bugzilla_SUMMARY="Bugzilla command-line client"
-bugzilla_CONTENTS="
+PKG_NAMES+=" bugzilla-cli"
+bugzilla_cli_CATEGORY="Net"
+bugzilla_cli_SUMMARY="Bugzilla command-line client"
+bugzilla_cli_CONTENTS="
 	usr/bin/bugzilla
-	usr/share/doc/bugzilla/
+	usr/share/doc/bugzilla-cli/
 	usr/share/man/man1/bugzilla.1*
 "
