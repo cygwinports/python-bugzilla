@@ -1,9 +1,9 @@
 inherit python-wheel
 
 NAME="python-bugzilla"
-VERSION=2.0.0
+VERSION=2.2.0
 RELEASE=1
-CATEGORY="Python Net"
+CATEGORY="Python"
 SUMMARY="Bugzilla XML-RPC Python module"
 DESCRIPTION="This package provides a Python module for talking to a Bugzilla
 instance over XML-RPC, and a command line tool.  This was written specifically
@@ -14,8 +14,11 @@ SRC_DIR="python-bugzilla-${VERSION}"
 
 ARCH=noarch
 
-python3_bugzilla_CONTENTS="
+PKG_NAMES+=" bugzilla"
+bugzilla_CATEGORY="Net"
+bugzilla_SUMMARY="Bugzilla command-line client"
+bugzilla_CONTENTS="
 	usr/bin/bugzilla
-	${python3_bugzilla_CONTENTS}
+	usr/share/doc/bugzilla/
 	usr/share/man/man1/bugzilla.1*
 "
